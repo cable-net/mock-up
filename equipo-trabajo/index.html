@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Equipo de trabajo</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h2>Nuevo colaborador</h2>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-7 col-lg-12">
+        <h4 class="mb-3">Informacion del colaborador</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Primer nombre</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Primer nombre es requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="secondName" class="form-label">Segundo nombre <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="secondName" placeholder="" value="">
+              <div class="invalid-feedback">
+                Segundo nombre no es valido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="surName" class="form-label">Apellido paterno</label>
+              <input type="text" class="form-control" id="surName" placeholder="" value="" required>
+              <div class="invalid-fedback">
+                Apellido parterno es requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellido materno</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Apellido marterno es requerido.
+              </div>
+            </div>
+
+            <div class="col-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">
+                Email es requerido.
+              </div>
+            </div>
+
+            <div class="col-3">
+              <label for="phone1" class="form-label">Telefono 1</label>
+              <input type="text" class="form-control" id="phone1" placeholder="1122334455" required>
+              <div class="invalid-feedback">
+                Telefono es requerido.
+              </div>
+            </div>
+
+            <div class="col-3">
+              <label for="phone2" class="form-label">Telefono 2</label>
+              <input type="text" class="form-control" id="phone2" placeholder="1122334455">
+            </div>
+
+            <div class="col-3">
+              <label for="type" class="form-label">Tipo de colaborador</label>
+              <select class="form-select" id="type" required>
+                <option>Ventas</option>
+                <option>Técnico</option>
+                <option>Supervisor</option>
+              </select>
+              <div class="invalid-feedback">
+                Tipo de colaborador requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <label for="requestDate" class="form-label">Fecha de nacimiento</label>
+              <input type="text" class="form-control" id="requestDate" placeholder="" value="12/04/1988" required>
+              <div class="invalid-feedback">
+                Fecha de nacimiento requerida.
+              </div>
+            </div>        
+
+            <div class="col-md-3">
+              <label for="curp" class="form-label">CURP</label>
+              <input type="text" class="form-control" id="curp" placeholder="" required>
+              <div class="invalid-feedback">
+                CURP es requerido.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="rfc" class="form-label">RFC</label>
+              <input type="text" class="form-control" id="rfc" placeholder="" required>
+              <div class="invalid-feedback">
+                RFC es requerido.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="gender" class="form-label">Genero</label>
+              <select class="form-select" id="gender" required>
+                <option>Femenino</option>
+                <option>Masculino</option>
+                <option>No especificar</option>
+              </select>
+              <div class="invalid-feedback">
+                Genero es requerido.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Calle y número</label>
+              <input type="text" class="form-control" id="address" placeholder="Av Hidalgo SN" required>
+              <div class="invalid-feedback">
+                Direccion es requerida.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Referencia</label>
+              <input type="text" class="form-control" id="address2" placeholder="Referencia" required>
+            </div>
+
+            <div class="col-md-3">
+              <label for="state" class="form-label">Estado</label>
+              <select class="form-select" id="state" required>
+                <option>Hidalgo</option>
+                <option>CDMX</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor seleccione un estado.
+              </div>              
+            </div>
+
+            <div class="col-md-3">
+              <label for="country" class="form-label">Municipio</label>
+              <select class="form-select" id="country" required>
+                <option>Mixquiahuala</option>
+                <option>Pogreso</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor seleccione un municipio.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="town" class="form-label">Colonia</label>
+              <select class="form-select" id="town" required>
+                <option>Centro</option>
+                <option>Nueva</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor seleccione un municipio.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Código Postal</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Código Postal es requerido.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+  </footer>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="form-validation.js"></script>
+  </body>
+</html>
